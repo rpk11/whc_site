@@ -1,0 +1,334 @@
+html,
+body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    color: #0f2648;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.wider {
+    width: 75%;
+}
+
+#navbar {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9b218;
+    height: 50px;
+}
+
+.navbar-items {
+    list-style-type: none;
+    padding: 10px 25px 10px 25px;
+    transition: color 1s;
+    transition: background 1s;
+    color: #0f2648;
+}
+
+.navbar-items a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0f2648;
+}
+
+.navbar-items:hover .link-alt {
+    color: white;
+}
+
+.navbar-items:hover {
+    background: #0f2648;
+}
+
+#showcase {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    max-height: 400px;
+    background: url("../images/whc-banner-1.png") center no-repeat;
+}
+
+.box a {
+    color: #0f2648;
+    text-decoration: none;
+}
+
+#quotes {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background: #f9b218;
+}
+
+#quote-fader #q1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    width: 80%;
+}
+
+#quote-fader #q2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    animation: 70s quote-fade infinite;
+    animation-delay: 10s;
+    width: 80%;
+}
+
+#quote-fader #q3 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    animation-delay: 20s;
+    width: 80%;
+}
+
+#quote-fader #q4 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    animation-delay: 30s;
+    padding: 0 10px 0 10px;
+    width: 80%;
+}
+
+#quote-fader #q5 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    animation-delay: 40s;
+    padding: 0 10px 0 10px;
+    width: 80%;
+}
+
+#quote-fader #q6 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    animation-delay: 50s;
+    padding: 0 10px 0 10px;
+    width: 80%;
+}
+
+#quote-fader #q7 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: 70s quote-fade infinite;
+    animation-delay: 60s;
+    padding: 0 10px 0 10px;
+    width: 80%;
+}
+
+#club-values {
+    margin-top: 40px;
+}
+
+#club-values h1 {
+    text-align: center;
+}
+
+#club-values p {
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+}
+
+#boxes {
+    display: flex;
+}
+
+.box {
+    padding: 0px 20px 0px 20px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+#learn-about-hurling,
+#schedule-and-events,
+#join-the-club {
+    transition: all 1s;
+}
+
+#learn-about-hurling:hover,
+#schedule-and-events:hover,
+#join-the-club:hover {
+    transform: scale(1.1);
+}
+
+#sponsors {
+    text-align: center;
+}
+
+#sponsors img {
+    width: 515px;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background: #0f2648;
+    color: white;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    animation: pulsingFbIcon 1s linear infinite;
+}
+
+@keyframes quote-fade {
+    0% {
+        opacity: 0;
+    }
+    4% {
+        opacity: 1;
+    }
+    12% {
+        opacity: 1;
+    }
+    16.6% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulsingFbIcon {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(59, 87, 157, 1);
+    }
+    50% {
+        box-shadow: 0px 0px 0px 5px rgba(59, 87, 157, 0.5);
+    }
+    100% {
+        box-shadow: 0px 0px 10px 10px rgba(59, 87, 157, 0);
+    }
+}
+
+@media(max-width: 1200px) {
+    .navbar-items {
+        padding: 0px 10px 0px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+@media(max-width: 1005px) {
+    .box {
+        padding: 0px 20px 0px 20px;
+        width: 100%
+    }
+    #boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    #navbar {
+        display: none;
+        height: auto;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+    }
+    #menu-toggle {
+        display: block;
+        color: #0f2648;
+        text-align: center;
+        cursor: pointer;
+        background: #f9b218;
+    }
+    #menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    #showcase {
+        border-top: 1px solid #0f2648;
+        border-bottom: 1px solid #0f2648;
+    }
+    #quotes {
+        border-bottom: 1px solid #0f2648;
+    }
+    .navbar-items {
+        text-align: center;
+        margin: 0 40px 0 40px;
+    }
+    .box {
+        padding: 0px 10px 0px 10px;
+        width: 90%;
+        text-align: center;
+    }
+    .box img {
+        width: 90%;
+    }
+    #learn-about-hurling:hover,
+    #schedule-and-events:hover,
+    #join-the-club:hover {
+        transform: scale(1);
+    }
+    #sponsors img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+}

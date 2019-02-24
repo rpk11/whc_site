@@ -1,0 +1,100 @@
+.center {
+    text-align: center;
+}
+
+#positions-and-skills p {
+    margin: 30px 0 30px 0;
+    text-align: left;
+}
+
+#skills {
+    text-align: left;
+}
+
+hr {
+    margin: 50px 0 50px 0;
+}
+
+.form-style label {
+    display: block;
+}
+
+.form-style #message {
+    resize: none;
+    width: 90%;
+    height: 175px;
+}
+
+.form-style input,
+.form-style select,
+.form-style textarea {
+    margin-bottom: 20px;
+}
+
+.form-style input,
+.form-style textarea {
+    width: 35%;
+}
+
+.form-style select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-style .button {
+    background: #0f2648;
+    border-radius: 5% 5% 5% 5%;
+    color: white;
+    border: none;
+    padding: 25px 0 25px 0;
+    width: 25%;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.form-style .button:hover {
+    background: #f9b218;
+    color: #0f2648;
+}
+
+#google-calendar {
+    margin-top: 30px;
+}
+
+@media(max-width:1350px) {
+    .form-style input,
+    .form-style textarea {
+        width: 50%;
+    }
+}
+
+@media(max-width:1100px) {
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #positions-and-skills img {
+        width: 67%;
+        height: 100%;
+    }
+}
+
+@media(max-width:768px) {
+    .form-style input,
+    .form-style textarea {
+        width: 75%;
+    }
+    .form-style #message {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
