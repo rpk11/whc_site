@@ -57,6 +57,11 @@ hr {
     color: #0f2648;
 }
 
+.form-style .error {
+    display: none;
+    color: red;
+}
+
 #google-calendar {
     margin-top: 30px;
 }

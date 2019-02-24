@@ -20,7 +20,7 @@
             $subject = "WHC -General Inquiry";
         }
         
-        $txt = "You have a message from: ".$name."\n\n Message: ".$message.".\n";
+        $txt = "You have a message from: ".$name."\n\nMessage: ".$message.".\n";
         mail($to, $subject, $txt, $headers);
     }
   
@@ -52,14 +52,14 @@
         if(!isset($_POST['submit']))
         {
         ?>
-            <form class="form-style" action="contact.php" method="POST">
+            <form class="form-style" action="contact.php" onsubmit="return validatedForm()" method="POST">
                 <h2 class="center">Contact Us</h2>
                 <p>We're always looking to hear from new people! So whether you are totally new to hurling, a seasoned hurling veteran or just want some information about our club, please send us a message below and we'll get back to you ASAP with as much
-                    detail as we can.</p>
-                <label>Name:</label>
-                <input type="text" name="name">
-                <label>Email:</label>
-                <input type="text" name="email">
+                    detail as we can. All fields are required.</p>
+                <label>Name:</label><div class="error" id="nameError">Your name is required</div>
+                <input type="text" name="name" id="name">
+                <label>Email:</label><div class="error" id="emailError">Email is not valid</div>
+                <input type="text" name="email" id="email">
                 <label>Subject:</label>
                 <select name="subject">
                     <option value="join">Join the team</option>
@@ -67,8 +67,8 @@
                     <option value="general">Suggest an event</option>
                     <option value="general">General information</option>
                 </select>
-                <label>Message: </label>
-                <textarea id="message"></textarea>
+                <label>Message: </label><div class="error" id="messageError">You must enter a message</div>
+                <textarea name="message" id="message"></textarea>
                 <button class="button" type="submit" value="Submit" name="submit">Submit</button>
             </form>
         <?php
@@ -85,6 +85,7 @@
         include 'footer.php';
     ?>
     <script src="./js/main.js"></script>
+    <script src="./js/form-val.js"></script>
 </body>
 
 </html>
