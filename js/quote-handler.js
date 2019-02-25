@@ -1,3 +1,6 @@
+/* If the text happens to land on a half pixel boundary, webkit browsers (ie: chrome) don't round down pixel values. This artefacts when rendering cause the text to appear blurry. This all depends on what your screen size is (and assuming you are using a webkit browser like chrome). The workaround here is to round both the height and width of each quote. There are other ways to workaround this problem without javascript, though they will not work combined with the animation we are using to fade in and out the quotes.
+
+Also need to check if the user resizes they window, and if they do, we use the same workaround again to ensure the quotes appear crisply */
 var q1 = document.getElementById("q1");
 var q2 = document.getElementById("q2");
 var q3 = document.getElementById("q3");
