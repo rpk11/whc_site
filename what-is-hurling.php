@@ -25,8 +25,9 @@
                 <h3>The basics</h3>
                 <p>
                     Hurling is an outdoor team game of Irish origin. It is the fastest field sport in the world. It has pre-historic roots and has been played for over 3,000 years in various forms. The stick is called a 'hurl' (or 'hurley') and is used to hit a small ball
-                    called a 'sliotar' (slit-ar).
+                    called a 'sliotar' (slit-ar).  
                 </p>
+               
                 <div class="iframe-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/fgEMvRrOCRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -41,6 +42,10 @@
                 </div>
 
                 <p>If all of that looks a bit crazy & difficult to you, the good news is that skills from games such as hockey, baseball, tennis, golf and lacrosse are transferable to hurling and will help you pick things up quickly.
+                </p>
+                     
+                <p>
+                    The only essential equipment to get started is a hurl and a helmet, but we have plenty of both available to beginners so just bring yourself and we'll bring the rest.
                 </p>
             </div>
         </section>

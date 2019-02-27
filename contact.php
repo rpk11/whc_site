@@ -55,7 +55,8 @@
             <form class="form-style" action="contact.php" onsubmit="return validatedForm()" method="POST">
                 <h2 class="center">Contact Us</h2>
                 <p>We're always looking to hear from new people! So whether you are totally new to hurling, a seasoned hurling veteran or just want some information about our club, please send us a message below and we'll get back to you ASAP with as much
-                    detail as we can. All fields are required.</p>
+                    detail as we can. </p>
+                    <p>All fields are required.</p>
                 <label>Name:</label><div class="error" id="nameError">Your name is required</div>
                 <input type="text" name="name" id="name">
                 <label>Email:</label><div class="error" id="emailError">Email is not valid</div>
