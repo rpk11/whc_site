@@ -229,6 +229,11 @@ footer img {
     animation: pulsingFbIcon 1s linear infinite;
 }
 
+footer a {
+    color: #f9b218;
+    text-decoration: underline;
+}
+
 @keyframes quote-fade {
     0% {
         opacity: 0;
